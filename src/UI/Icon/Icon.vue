@@ -9,6 +9,7 @@ import arrowLeft from '@/assets/icons/arrow-left.svg';
 import cart from '@/assets/icons/cart.svg';
 import heart from '@/assets/icons/heart.svg';
 import heartFilled from '@/assets/icons/heart-filled.svg';
+import heartNav from '@/assets/icons/heart-nav.svg';
 import ok from '@/assets/icons/ok.svg';
 import search from '@/assets/icons/search.svg';
 import user from '@/assets/icons/user.svg';
@@ -22,6 +23,7 @@ const icons = {
   cart,
   heart,
   heartFilled,
+  heartNav,
   ok,
   search,
   user,
@@ -40,6 +42,7 @@ export default defineComponent({
           | 'cart'
           | 'heart'
           | 'heartFilled'
+          | 'heartNav'
           | 'ok'
           | 'search'
           | 'user'

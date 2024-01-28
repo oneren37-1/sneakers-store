@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {Button, Icon, Text} from "@/UI"
+import {formatPrice} from "@/utils";
 import {defineProps, ref} from 'vue';
 
 const props = defineProps({
@@ -35,11 +36,6 @@ const added = ref(props.added);
 
 function toggleAdd(): void {
   added.value = !added.value;
-}
-
-function formatPrice(price: number): string {
-  const formattedPrice = price.toLocaleString('ru-RU');
-  return `${formattedPrice} руб.`;
 }
 
 </script>
