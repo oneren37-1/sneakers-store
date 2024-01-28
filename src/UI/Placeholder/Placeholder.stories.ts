@@ -3,7 +3,7 @@ import Placeholder from './Placeholder.vue';
 
 
 export default {
-    title: 'Placeholder',
+    title: 'UI/Placeholder',
     component: Placeholder,
     args: {
         imgSrc: "/src/assets/placeholders/em1.png",

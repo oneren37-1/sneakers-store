@@ -2,7 +2,7 @@ import { StoryFn, Meta } from '@storybook/vue3';
 import Title from './Title.vue';
 
 export default {
-    title: 'Typography/Title',
+    title: 'UI/Typography/Title',
     component: Title,
     argTypes: {
         level: {

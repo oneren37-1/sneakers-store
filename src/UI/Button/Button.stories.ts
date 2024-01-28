@@ -3,7 +3,7 @@ import Button from './Button.vue';
 import Icon from "../Icon/Icon.vue";
 
 export default {
-    title: 'Button',
+    title: 'UI/Button',
     component: Button,
     argTypes: {
         block: {

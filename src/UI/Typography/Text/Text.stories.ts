@@ -2,7 +2,7 @@ import { StoryFn, Meta } from '@storybook/vue3';
 import Text from './Text.vue';
 
 export default {
-    title: 'Typography/Text',
+    title: 'UI/Typography/Text',
     component: Text,
     argTypes: {
         bold: {

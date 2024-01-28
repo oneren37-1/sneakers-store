@@ -2,7 +2,7 @@ import { StoryFn, Meta } from '@storybook/vue3';
 import Card from './Card.vue';
 
 export default {
-    title: 'Card',
+    title: 'Components/Card',
     component: Card,
     args: {
         imgSrc: "/src/assets/sneakers/image 5.jpg",

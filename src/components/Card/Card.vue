@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import Button from "@/UI/Button/Button.vue";
-import Icon from "@/UI/Icon/Icon.vue"
-import {Text} from "@/UI/Typography";
-
+import {Button, Icon, Text} from "@/UI"
 import {defineProps, ref} from 'vue';
 
 const props = defineProps({

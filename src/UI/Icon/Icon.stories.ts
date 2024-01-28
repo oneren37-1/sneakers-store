@@ -2,7 +2,7 @@ import { StoryFn, Meta } from '@storybook/vue3';
 import Icon from './Icon.vue';
 
 export default {
-    title: 'Icon',
+    title: 'UI/Icon',
     component: Icon,
     argTypes: {
         name: {
