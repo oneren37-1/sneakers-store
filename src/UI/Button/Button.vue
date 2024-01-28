@@ -1,16 +1,23 @@
 <script lang="ts" setup>
-import { defineProps } from 'vue';
+import {defineProps, PropType} from 'vue';
 
 const props = defineProps({
   block: {
     type: Boolean,
     default: false,
+  },
+  variant: {
+    type: String as PropType<'primary'|'light'>,
+    default: 'primary',
   }
 });
 </script>
 
 <template>
-  <button class="button" :class="[props.block ? 'block' : '']">
+  <button class="button" :class="[
+      props.block ? 'block' : '',
+      props.variant
+  ]">
     <span v-if="$slots['left-icon']" class="left-icon">
       <slot name="left-icon"/>
     </span>
@@ -28,9 +35,7 @@ const props = defineProps({
     padding: 18px 31px;
 
     border-radius: 18px;
-    background: #9DD458;
 
-    color: #FFF;
     text-align: center;
     font-size: 16px;
     line-height: 19px;
@@ -39,16 +44,29 @@ const props = defineProps({
 
     display: flex;
     align-items: center;
+    justify-content: center;
 
     cursor: pointer;
+
+    &.primary {
+      color: #FFF;
+      background: #9DD458;
+    }
+
+    &.light {
+      background: #FFF;
+      border: 0.5px solid #F3F3F3;
+      padding: 10px 10px;
+      border-radius: 7px;
+    }
   }
 
-  .left-icon {
-    padding-right: 10px;
+  .left-icon:not(:last-child) {
+    margin-right: 10px;
   }
 
-  .right-icon {
-    padding-left: 10px;
+  .right-icon:not(:last-child) {
+    margin-left: 10px;
   }
 
   .left-icon,
@@ -58,5 +76,6 @@ const props = defineProps({
 
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 </style>

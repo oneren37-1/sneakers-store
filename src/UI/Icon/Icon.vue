@@ -2,22 +2,26 @@
 import { defineComponent, PropType, ref, watch } from 'vue';
 
 import add from '@/assets/icons/add.svg';
+import added from '@/assets/icons/added.svg';
 import arrowRight from '@/assets/icons/arrow-right.svg';
 import arrowRightLight from '@/assets/icons/arrow-right-lite.svg';
 import arrowLeft from '@/assets/icons/arrow-left.svg';
 import cart from '@/assets/icons/cart.svg';
 import heart from '@/assets/icons/heart.svg';
+import heartFilled from '@/assets/icons/heart-filled.svg';
 import ok from '@/assets/icons/ok.svg';
 import search from '@/assets/icons/search.svg';
 import user from '@/assets/icons/user.svg';
 
 const icons = {
   add,
+  added,
   arrowRight,
   arrowRightLight,
   arrowLeft,
   cart,
   heart,
+  heartFilled,
   ok,
   search,
   user,
@@ -28,7 +32,17 @@ export default defineComponent({
   props: {
     name: {
       type: String as PropType<
-          'add' | 'arrowRight' | 'arrowRightLight' | 'arrowLeft' | 'cart' | 'heart' | 'ok' | 'search' | 'user'
+          'add'
+          | 'added'
+          | 'arrowRight'
+          | 'arrowRightLight'
+          | 'arrowLeft'
+          | 'cart'
+          | 'heart'
+          | 'heartFilled'
+          | 'ok'
+          | 'search'
+          | 'user'
       >,
       required: true,
     },
