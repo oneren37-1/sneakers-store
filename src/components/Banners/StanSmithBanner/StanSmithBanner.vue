@@ -19,6 +19,7 @@ import {Heading, Text, Button} from "@/UI";
 <style scoped lang="scss">
   .banner {
     background: #F4EFE9;
+    width: 100%;
     height: 100%;
 
     position: relative;
