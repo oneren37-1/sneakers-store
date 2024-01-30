@@ -1,0 +1,1 @@
+export { default as StanSmithBanner } from './StanSmithBanner/StanSmithBanner.vue'
