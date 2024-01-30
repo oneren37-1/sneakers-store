@@ -1,8 +1,8 @@
 import { StoryFn, Meta } from '@storybook/vue3';
-import Title from './Title.vue';
+import Title from './Heading.vue';
 
 export default {
-    title: 'UI/Typography/Title',
+    title: 'UI/Typography/Heading',
     component: Title,
     argTypes: {
         level: {

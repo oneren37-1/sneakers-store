@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {defineProps, PropType} from 'vue';
-import {Text, Title} from "@/UI/Typography";
+import {Text, Heading} from "@/UI/Typography";
 import Button from "@/UI/Button/Button.vue";
 import Icon from "@/UI/Icon/Icon.vue";
 
@@ -30,7 +30,7 @@ const props = defineProps({
   <div class="placeholder-wrapper">
     <div class="placeholder">
       <img class="img" :class="`img-size_${imgSize ? imgSize : 'm'}`" :src="imgSrc" alt="placeholder image">
-      <Title class="title" :level="3">{{props.title}}</Title>
+      <Heading class="title" :level="3">{{props.title}}</Heading>
       <Text class="text">{{props.text}}</Text>
       <Button class="button">
         <template #left-icon>
