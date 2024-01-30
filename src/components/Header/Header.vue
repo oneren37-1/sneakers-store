@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {Title, Text, Icon} from "@/UI";
+import {Heading, Text, Icon} from "@/UI";
 import {formatPrice} from "@/utils";
 
 </script>
@@ -9,7 +9,7 @@ import {formatPrice} from "@/utils";
     <a href="/" class="logo">
       <img src="./assets/logo.png" alt="logo" class="logo-img">
       <span class="logo-name">
-      <Title :level="3">SNEAKERS SHOP</Title>
+      <Heading :level="3">SNEAKERS SHOP</Heading>
       <Text>Магазин лучших кроссовок</Text>
     </span>
     </a>
