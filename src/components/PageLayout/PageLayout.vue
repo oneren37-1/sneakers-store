@@ -22,6 +22,8 @@
     min-height: 100vh;
     background: #E7F6FF;
     padding: 85px;
+
+    position: relative;
   }
 
   .inner {
