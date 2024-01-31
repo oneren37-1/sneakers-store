@@ -13,6 +13,7 @@ import heartNav from '@/assets/icons/heart-nav.svg';
 import ok from '@/assets/icons/ok.svg';
 import search from '@/assets/icons/search.svg';
 import user from '@/assets/icons/user.svg';
+import close from '@/assets/icons/close.svg';
 
 const icons = {
   add,
@@ -27,6 +28,7 @@ const icons = {
   ok,
   search,
   user,
+  close
 };
 
 export default defineComponent({
@@ -46,6 +48,7 @@ export default defineComponent({
           | 'ok'
           | 'search'
           | 'user'
+          | 'close'
       >,
       required: true,
     },

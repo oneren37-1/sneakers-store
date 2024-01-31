@@ -1,5 +1,6 @@
 import { StoryFn, Meta } from '@storybook/vue3';
 import Card from './Card.vue';
+import CartCard from "./CartCard.vue";
 
 export default {
     title: 'Components/Card',
@@ -16,5 +17,14 @@ export const DefaultCard: StoryFn<typeof Card> = (args) => ({
     setup() { return { args }; },
     template: `<div style="width: 210px;">
       <Card v-bind="args" />
+    </div>`,
+});
+
+
+export const CartCardStory: StoryFn<typeof CartCard> = (args) => ({
+    components: { CartCard },
+    setup() { return { args }; },
+    template: `<div style="width: 210px;">
+      <CartCard v-bind="args" />
     </div>`,
 });
